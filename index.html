@@ -1,12 +1,99 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  </head>
+  <body>
+
+
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">my reading list</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a id="add-new-book" class="nav-link active" aria-current="page" href="#">Add Book</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div id="library-container">
+
+          <!-- <div id="new-book-card" class="card" style="width: 18rem; display: none;"> -->
+        <div id="new-book-card" class="card" style="width: 18rem; display: none;">
+            <!-- <img src="..." class="card-img-top" alt="..."> -->
+            <div class="card-body">
+                <h5 class="card-title">Add Book</h5>
+                <form id="new-book-form">
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Title</label>
+                      <input type="text" class="form-control" id="new-title">
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="new-author" class="form-label">Author</label>
+                        <input type="text" class="form-control" id="new-author">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="new-pages" class="form-label">Pages</label>
+                        <input type="number" class="form-control" id="new-pages">
     
-</body>
+                    </div>
+
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Read</label>
+                    </div>
+                    <button id="add-book" type="submit" class="btn btn-primary">Add</button>
+                    <button type="submit" class="btn btn btn-danger">Cancel</button>
+                  </form>
+            </div>
+          </div>
+
+          <!-- <div class="card" style="width: 18rem;">
+
+            <div class="card-body">
+            <h5 class="card-title">The Call of Cthulhu</h5>
+            <div class="book-details">
+                <h6 class="card-title">Author:</h6>
+                <p class="card-text">H.P. Lovecraft</p>
+                <h6 class="card-title">Pages:</h6>
+                <p class="card-text">116</p>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                    Read
+                    </label>
+                </div>
+                <br/>
+
+                <a href="#" class="btn btn-primary">Remove</a>
+            </div>      
+
+            </div>
+          </div> -->
+
+
+          
+
+      </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script type="module" src="/main.js"></script>
+  </body>
 </html>
