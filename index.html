@@ -12,22 +12,37 @@
 
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">my reading list</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#">my reading list</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-              <li class="nav-item">
-                <a id="add-new-book" class="nav-link active" aria-current="page" href="#">Add Book</a>
-              </li>
+                <li class="nav-item">
+                <a id="add-new-book" class="nav-link active" aria-current="page" href="#">Add Books</a>
+                </li>
+                <li class="nav-item">
+                <a id="save-list" class="nav-link active" aria-current="page" href="#">Save Reading List</a>
+                </li>
+                <li class="nav-item">
+                <a id="clear-list" class="nav-link active" aria-current="page" href="#">Clear Reading List</a>
+                </li>
 
             </ul>
-          </div>
+            </div>
         </div>
-      </nav>
+        </nav>
 
-      <div id="library-container">
+        <div id="alerts-section">
+            <!-- <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div> -->
+        </div>
+      
+      <div id="library-container" class="card" style="width: 20rem;">
+        <h5 class="library-title">My Reading List</h5>
+
 
           <!-- <div id="new-book-card" class="card" style="width: 18rem; display: none;"> -->
         <div id="new-book-card" class="card" style="width: 18rem; display: none;">
@@ -56,7 +71,7 @@
                       <label class="form-check-label" for="exampleCheck1">Read</label>
                     </div>
                     <button id="add-book" type="submit" class="btn btn-primary">Add</button>
-                    <button type="submit" class="btn btn btn-danger">Cancel</button>
+                    <button id="cancel-btn" type="submit" class="btn btn btn-danger">Cancel</button>
                   </form>
             </div>
           </div>
